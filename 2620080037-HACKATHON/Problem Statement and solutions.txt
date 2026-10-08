@@ -1,0 +1,57 @@
+PROBLEM STATEMENT
+
+Cinema Ticket Booking System
+
+A cinema hall wants to develop a Cinema Ticket Booking System to calculate the total ticket cost and apply discounts based on the number of tickets booked. The system should store the movie name, ticket price, and number of tickets.
+
+Create a Java class named MovieTicket with a parameterized constructor to initialize the movie name, ticket price, and number of tickets.
+
+The program should implement the following methods:
+
+1. calculateTotal() - Calculates the total ticket amount using ticket price multiplied by the number of tickets.
+
+2. calculateDiscount() - Provides a 10% discount if the number of tickets is 5 or more. Otherwise, no discount is given.
+
+3. calculateFinalAmount() - Calculates the final amount after deducting the discount from the total amount.
+
+4. displayBill() - Displays the movie name, ticket price, number of tickets, discount, and final amount.
+
+In the main() method, read the required input values from the user, create a MovieTicket object using the parameterized constructor, and invoke the required methods to calculate and display the complete booking bill. All monetary values should be displayed with two decimal places.
+
+
+SOLUTION IN WORDS
+
+1. Create a class named MovieTicket.
+
+2. Declare three data members:
+   - movieName to store the name of the movie.
+   - ticketPrice to store the price of one ticket.
+   - numberOfTickets to store the number of tickets booked.
+
+3. Create a parameterized constructor to initialize movieName, ticketPrice, and numberOfTickets.
+
+4. Create the calculateTotal() method. This method multiplies the ticket price by the number of tickets and returns the total amount.
+
+   Total Amount = Ticket Price × Number of Tickets
+
+5. Create the calculateDiscount() method. If the number of tickets is 5 or more, calculate a 10% discount on the total amount. Otherwise, the discount is zero.
+
+   Discount = Total Amount × 10 / 100
+
+6. Create the calculateFinalAmount() method. Subtract the discount from the total amount.
+
+   Final Amount = Total Amount - Discount
+
+7. Create the displayBill() method to display the movie name, ticket price, number of tickets, total amount, discount, and final amount.
+
+8. In the main() method, create a Scanner object to accept input from the user.
+
+9. Read the movie name, ticket price, and number of tickets from the user.
+
+10. Create a MovieTicket object using the parameterized constructor.
+
+11. Call the calculation methods to calculate the total amount, discount, and final amount.
+
+12. Finally, call the displayBill() method to display the complete cinema ticket booking bill.
+
+13. Monetary values are displayed with two decimal places using printf("%.2f").
